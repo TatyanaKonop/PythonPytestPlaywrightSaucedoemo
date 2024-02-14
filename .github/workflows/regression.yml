@@ -51,9 +51,9 @@ jobs:
             echo "::set-output name=env_name::${ENV:-prod}"
             pytest ${args} --bn ${{ matrix.browser }}
       - name: Playwright report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: my-artifact
-          path: path/to/artifact/
+          path: ./
           retention-days: 5
