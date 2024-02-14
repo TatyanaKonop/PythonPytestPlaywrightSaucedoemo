@@ -55,5 +55,5 @@ jobs:
         if: always()
         with:
           name: my-artifact
-          path: pwreport3.html
+          path: reports/pwreport3.html
           retention-days: 1
