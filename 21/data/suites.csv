@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Feb 15 07:18:09 GMT 2024","Thu Feb 15 07:18:11 GMT 2024","1827","tests","test_buy_product","TestBuyProduct","","","test_buy_product","Test e2e"
