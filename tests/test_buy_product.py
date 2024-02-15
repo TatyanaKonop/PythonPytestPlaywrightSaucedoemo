@@ -1,3 +1,4 @@
+import allure
 import pytest
 
 from fixtures import page
@@ -6,6 +7,8 @@ from tests.base_test import BaseTest
 import pytest
 
 
+@allure.description("Test e2e")
+@allure.title("Test successful purchase of one product")
 @pytest.mark.regression
 @pytest.mark.usefixtures('login_user')
 class TestBuyProduct(BaseTest):

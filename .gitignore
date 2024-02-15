@@ -76,6 +76,9 @@ ENV/
 env.bak/
 venv.bak/
 
+allure-results/
+reports/
+
 
 
 # Pyre type checker

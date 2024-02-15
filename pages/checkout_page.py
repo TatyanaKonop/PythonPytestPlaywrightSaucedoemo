@@ -1,3 +1,5 @@
+import allure
+
 from pages.base_page import Base
 from locators.checkout_page_locator import Checkout
 
@@ -10,7 +12,7 @@ class CheckoutPage(Base):
         super().__init__(page)
         self.assertions = Assertions(page)
 
-
+    @allure.step('Fill checkout form')
     def checkout(self):
         self.input(Checkout.FIRST_NAME, "Ivan")
         self.input(Checkout.LAST_NAME, "Ivanov")

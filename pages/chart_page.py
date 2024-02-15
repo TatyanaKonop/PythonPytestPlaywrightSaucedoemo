@@ -1,3 +1,5 @@
+import allure
+
 from pages.base_page import Base
 from locators.chart_page_locator import Chart
 from data.assertions import Assertions
@@ -9,6 +11,7 @@ class ChartPage(Base):
         super().__init__(page)
         self.assertions = Assertions(page)
 
+    @allure.step('Click checkout button')
     def go_to_checkout(self):
         self.click(Chart.CHECKOUT_BTN)
 
