@@ -1,14 +1,7 @@
 import allure
-from playwright.async_api import expect
-
 from locators.complete_page_locator import Compete
-from locators.market_page_locator import Market
-from pages.chart_page import ChartPage
-from pages.login_page import Main
 from pages.market_page import MarketPage
-from tests.base_test import BaseTest
 import pytest
-
 from utils.json_parser import JsonParser
 
 

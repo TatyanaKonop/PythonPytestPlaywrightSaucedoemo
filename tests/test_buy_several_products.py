@@ -1,8 +1,6 @@
 import allure
 import random
-
 import pytest
-
 from locators.check_overview_page_locator import CheckOverview
 from pages.market_page import MarketPage
 from utils.api import extract_number

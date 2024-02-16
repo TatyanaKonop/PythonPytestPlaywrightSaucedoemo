@@ -1,10 +1,8 @@
 import allure
 import pytest
-from playwright.async_api import expect
 from data.environment import host
 from pages.login_page import Main
-from data.assertions import Assertions
-from tests.base_test import BaseTest
+
 
 
 @pytest.mark.smoke
