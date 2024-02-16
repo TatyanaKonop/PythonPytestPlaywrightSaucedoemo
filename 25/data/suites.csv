@@ -1,0 +1,60 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Feb 16 14:50:04 GMT 2024","Fri Feb 16 14:50:06 GMT 2024","2243","tests","test_buy_several_products_2","TestCheckoutOverviewName","","","test_random_number_products_added_displayed_in_checkout_overview","
+                This end-to-end test verifies that added product are displayed on the checkout overview page
+
+                Preconditions:
+                - User should be logged in.
+
+                Steps:
+
+                1. Navigate to the product page.
+                2. Add n random  desired products to the cart.
+                3. Go to chart
+                4. Proceed to checkout.
+                5.Fill in required information.
+                6. Confirm the order
+                
+
+
+                Expected result:
+                -  names of added products on the checkout overview page are correct.
+            "
+"passed","Fri Feb 16 14:50:00 GMT 2024","Fri Feb 16 14:50:02 GMT 2024","2325","tests","test_buy_several_products","TestCheckoutOverviewTotalSum","","","test_sum_random_number_products_and_tax_equal_total_sum","
+            This end-to-end test verifies the correctness of tax calculation, item count, and total amount on the checkout overview page
+
+            Preconditions:
+            - User should be logged in.
+
+            Steps:
+
+            1. Navigate to the product page.
+            2. Add n random  desired products to the cart.
+            3. Go to chart
+            4. Proceed to checkout.
+            5.Fill in required information.
+            6. Confirm the order
+            7. Count sum of all products and tax.
+            
+
+            Expected result:
+            -  total amount on the checkout overview page is correct.
+        "
+"passed","Fri Feb 16 14:49:56 GMT 2024","Fri Feb 16 14:49:58 GMT 2024","1823","tests","test_buy_product","TestBuyProduct","","","test_buy_product","
+        This end-to-end test verifies the purchase process on the website.
+
+        Preconditions:
+        - User should be logged in.
+
+        Steps:
+        
+        1. Navigate to the product page.
+        2. Add the desired product to the cart.
+        3. Go to chart
+        4. Proceed to checkout.
+        5. Fill in required information.
+        6. Confirm the order.
+        7. Finish purchase
+
+        Expected result:
+        - User should receive a confirmation message.
+    "
