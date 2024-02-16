@@ -98,13 +98,3 @@ def get_context(browser, request, start) -> BrowserContext:
 def return_back(browser):
     browser.go_back()
 
-@pytest.fixture
-# Instantiates Page Objects
-def pages(browser):
-    market_page = MarketPage(browser)
-    chart_page = ChartPage(browser)
-    checkout_page = CheckoutPage(browser)
-    login_page = Main(browser)
-    checkout_overview_page = CheckoutOverviewPage(browser)
-    complete_page = CompletePage(browser)
-    return locals()

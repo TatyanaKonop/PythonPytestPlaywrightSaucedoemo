@@ -1,5 +1,8 @@
 
-{"complete-page_data":
+{"complete_page_data":
   {"message_success_purchase":
-  "Checkout: Complete!"}
+  "Checkout: Complete!"},
+  "market_page": {
+    "uri_for_market_page": "inventory.html"
+  }
 }

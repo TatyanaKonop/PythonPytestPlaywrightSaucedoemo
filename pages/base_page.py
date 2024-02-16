@@ -1,5 +1,6 @@
 from playwright.sync_api import Page, Response, TimeoutError, expect
 from data.environment import host
+from utils.api import extract_number
 
 
 class Base:
@@ -17,6 +18,20 @@ class Base:
 
     def get_text(self, element) -> str:
         return self.page.locator(element).text_content()
+
+    def get_text_all_elements(self, selector) -> list:
+
+        return self.page.locator(selector).all_inner_texts()
+
+
+    def get_several_elements(self, selector):
+        return self.page.locator(selector).all()
+
+    def list_names_for_defined_number_elements(self, selector: str, n: int):
+        list_elements = []
+        for index in range(n):
+            list_elements.append(self.page.locator(selector).nth(index).text_content())
+        return list_elements
 
     def click_element_by_index(self, selector: str, index: int):
         self.page.locator(selector).nth(index).click()
