@@ -40,6 +40,5 @@ class TestCheckoutOverviewName:
         checkout_page.checkout()
         checkout_overview_page = checkout_page.go_to_checkout_overview_page()
         list_of_products_in_checkout_overview = checkout_overview_page.get_list_of_products_in_checkout_overview_page()
-        print(list_of_products_in_checkout_overview)
         assert list_of_products_in_checkout_overview == list_of_chosen_products, "names of added products on the checkout overview page are incorrect"
 

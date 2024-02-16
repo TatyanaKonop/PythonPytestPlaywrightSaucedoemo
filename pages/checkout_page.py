@@ -2,8 +2,6 @@ import allure
 
 from pages.base_page import Base
 from locators.checkout_page_locator import Checkout
-
-from data.assertions import Assertions
 from playwright.sync_api import Page
 
 from pages.checkout_overview_page import CheckoutOverviewPage
@@ -12,7 +10,6 @@ from pages.checkout_overview_page import CheckoutOverviewPage
 class CheckoutPage(Base):
     def __init__(self, page: Page):
         super().__init__(page)
-        self.assertions = Assertions(page)
 
     @allure.step('Fill checkout form')
     def checkout(self):

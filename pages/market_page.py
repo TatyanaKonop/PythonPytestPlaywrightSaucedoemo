@@ -3,7 +3,6 @@ import allure
 from locators.check_overview_page_locator import CheckOverview
 from pages.base_page import Base
 from locators.market_page_locator import Market
-from data.assertions import Assertions
 from playwright.sync_api import Page
 
 from pages.chart_page import ChartPage
@@ -12,9 +11,6 @@ from pages.chart_page import ChartPage
 class MarketPage(Base):
     def __init__(self, page: Page):
         super().__init__(page)
-        self.assertions = Assertions(page)
-
-
 
     @allure.step('Add n number of unrepeated products to chart ')
     def add_to_cart(self, n=1,
